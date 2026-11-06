@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793485459696,
+      "tag": "0000_quiet_mandroid",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793488108096,
+      "tag": "0001_red_gargoyle",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793508676487,
+      "tag": "0002_concerned_leo",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793509728744,
+      "tag": "0003_right_angel",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793547511303,
+      "tag": "0004_thankful_madame_masque",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1793560465156,
+      "tag": "0005_opposite_kulan_gath",
+      "breakpoints": true
+    }
+  ]
+}

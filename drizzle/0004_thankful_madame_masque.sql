@@ -1,0 +1,1 @@
+CREATE INDEX `orders_analytics_session` ON `orders` (`analytics_session`);

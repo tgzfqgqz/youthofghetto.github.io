@@ -1,0 +1,6 @@
+'use client';
+import {useLanguage} from './language';
+import {CONTENT_DEFAULTS} from '../lib/shop-content-defaults';
+import Notifications from './notifications';
+export function SocialLinks({info=CONTENT_DEFAULTS,whatsapp='212770876528'}:{info?:any,whatsapp?:string}){return <div className="social-links" aria-label="Social links">{info.instagram&&<a href={info.instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a>}{info.tiktok&&<a href={info.tiktok} target="_blank" rel="noopener noreferrer">TikTok ↗</a>}<a href={'https://wa.me/'+whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div>}
+export default function StoreFooter({info=CONTENT_DEFAULTS,settings}:{info?:any,settings?:any}){const {t}=useLanguage();return <footer className="store-footer"><div><a className="logo" href="/">YOG®</a><p>{t('Made on the block. Worn everywhere.')}<br/>{t('Morocco · Prices in MAD')}</p><SocialLinks info={info} whatsapp={settings?.whatsapp}/></div><nav aria-label={t('Help and policies')}><a href="/about">{t('Our story')}</a><a href="/size-guide">{t('Size guide')}</a><a href="/shipping-returns">{t('Shipping & returns')}</a><a href="/faq">{t('FAQ')}</a><a href="/terms">{t('Terms of Service')}</a><a href="/privacy">{t('Privacy Policy')}</a><a href="/refund-policy">{t('Refund Policy')}</a></nav><Notifications/></footer>}
